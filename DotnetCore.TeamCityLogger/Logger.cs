@@ -38,11 +38,11 @@ namespace DotnetCore.TeamCityLogger
             {
                 if (message.Category == TestResultMessage.StandardOutCategory)
                 {
-                    WriteServiceMessage($"testStdOut name='{testName}'] out='{message.Text}'");
+                    WriteServiceMessage($"testStdOut name='{testName}' out='{message.Text}'");
                 }
                 else if (message.Category == TestResultMessage.StandardErrorCategory)
                 {
-                    WriteServiceMessage($"testStdErr name='{testName}'] out='{message.Text}'");
+                    WriteServiceMessage($"testStdErr name='{testName}' out='{message.Text}'");
                 }
             }
 
